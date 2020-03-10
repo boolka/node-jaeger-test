@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package service1;
+
+message EchoRequest {
+}
+
+message EchoResponse {
+}
+
+service Service1 {
+    rpc EchoCall (EchoRequest) returns (EchoResponse);
+}
